@@ -13,6 +13,7 @@ Ingredient.destroy_all
 
 puts "Kk we gonna seed now."
 
+# Ingredients
 # Ingredient.create(name: "lemon")
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
@@ -25,5 +26,7 @@ ingredients = JSON.parse(url_ingredients)
 ingredients['drinks'].each do |ingredient|
   Ingredient.create(name: ingredient['strIngredient1'])
 end
+
+
 
 puts "Done man."
